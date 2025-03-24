@@ -9,8 +9,8 @@ from threading import Thread, current_thread
 CALLBACK = T.Callable[[str], str]
 TASK = T.Tuple[CALLBACK, socket]
 TASKQUEUE = queue.Queue
-SERVERPORT = 8630
-API_KEY = "1f940558e4fb40b913f2330a"
+SERVERPORT = "Port#"
+API_KEY = "<API-KEY>"
 
 class Worker(Thread):
     def __init__(self, tasks: queue.Queue[TASK]):
